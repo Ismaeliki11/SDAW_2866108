@@ -13,12 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Seleccionamos el párrafo por su ID 'mensaje'
   const parrafoMensaje = document.getElementById('mensaje');
+  const botonActualizacion = document.getElementById('actualizacionBtn');
+  const parrafoActualizacion = document.getElementById('mensajeActualizacion');
 
   // 2. Definimos la función que se ejecutará al hacer clic
   
   function mostrarSaludo() {
     // Escribimos el mensaje exacto solicitado en el párrafo
     parrafoMensaje.textContent = 'Hola Ismael Flores Andreo';
+  }
+
+  function anunciarActualizacion() {
+    if (parrafoActualizacion) {
+      parrafoActualizacion.textContent = 'Nueva actualizacion lista para GitHub.';
+    }
   }
 
   // 3. Añadimos el "oyente de eventos" (Event Listener)
@@ -30,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     botonSaludar.addEventListener('click', mostrarSaludo);
   } else {
     console.error("Error: No se encontró el elemento con ID 'saludoBtn'");
+  }
+
+  if (botonActualizacion) {
+    botonActualizacion.addEventListener('click', anunciarActualizacion);
+  } else {
+    console.error("Error: No se encontro el elemento con ID 'actualizacionBtn'");
   }
 
 });
