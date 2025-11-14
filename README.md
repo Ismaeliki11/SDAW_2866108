@@ -115,12 +115,9 @@ Aquí tienes una chuleta con los comandos más importantes que usarás para esta
 
 En esta práctica, he podido aplicar los conceptos teóricos de... El uso de Git me ha permitido... La separación entre el servidor (server.js) y el cliente (index.html y script.js) me ha ayudado a entender mejor la arquitectura de una aplicación web moderna...
 
-## Información técnica añadida desde rama 1
-En esta sección se describen los principales comandos de Git utilizados durante la práctica:
+## Información técnica añadida desde rama 2
+a3c91d2 Primer commit
+f1b22ab Añadido script.js
+c98aa13 Creada estructura base del proyecto
 
-- git init: inicializa un repositorio local.
-- git add: añade archivos al área de staging.
-- git commit: guarda los cambios en el repositorio (con mensaje).
-- git branch: lista y crea ramas.
-- git merge: fusiona ramas.
-- git push: envía los commits al remoto.
+
