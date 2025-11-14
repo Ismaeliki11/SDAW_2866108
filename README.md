@@ -122,4 +122,10 @@ En esta práctica, he podido aplicar los conceptos teóricos de... El uso de Git
 - git branch: lista y crea ramas.
 - git merge: fusiona una rama con otra.
 - git push: envía los commits al repositorio remoto.
+=======
+## Información técnica añadida desde rama 2
+a3c91d2 Primer commit
+f1b22ab Añadido script.js
+c98aa13 Creada estructura base del proyecto
+
 
