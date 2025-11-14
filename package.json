@@ -1,0 +1,17 @@
+{
+  "name": "sdaw_2866108",
+  "version": "1.0.0",
+  "description": "Pequeña aplicación web con Node.js y Express para la práctica de la asignatura SDAW.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ismael Flores Andreo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "type": "commonjs"
+}
