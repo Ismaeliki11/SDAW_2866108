@@ -47,14 +47,19 @@ Sigue estos pasos para poner en marcha el proyecto:
 
 Visita [http://localhost:3000](http://localhost:3000) en tu navegador web. Deberías ver la página de la práctica.
 
+## Novedades de la última versión
+
+- Se añadió un segundo botón etiquetado como "Nueva actualizacion" en `index.html`. Este control añade un pequeño mensaje secundario y sirve como prueba visible para nuevos commits (por ejemplo, al subir la actividad a GitHub).
+- `script.js` ahora escucha el evento `click` de ese botón y muestra el texto "Nueva actualizacion lista para GitHub." para dejar constancia de la actualización en la interfaz.
+
 ## Estructura del Proyecto
 
 El proyecto se compone de los siguientes archivos:
 
 - **package.json:** Archivo de configuración de npm. Define el nombre del proyecto, la versión, los scripts (como npm start) y las dependencias (como express).
 - **server.js:** El corazón de nuestro backend. Este archivo utiliza Express para crear un servidor web, definir que debe escuchar en el puerto 3000 y servir los archivos estáticos y el index.html.
-- **index.html:** La estructura de la página web (el "frontend"). Contiene el título, el botón de saludo y el párrafo donde se mostrará el mensaje.
-- **script.js:** El código JavaScript del lado del cliente. Se encarga de "escuchar" el clic en el botón y de modificar el HTML para mostrar el saludo.
+- **index.html:** La estructura de la página web (el "frontend"). Contiene el título, el botón de saludo, el botón "Nueva actualizacion" y los párrafos donde se mostrarán los mensajes.
+- **script.js:** El código JavaScript del lado del cliente. Se encarga de "escuchar" el clic en ambos botones y de modificar el HTML para mostrar el saludo o el aviso de actualización.
 - **README.md:** ¡Este mismo archivo! La documentación del proyecto.
 
 ## Comandos Útiles (Node.js y Git)
