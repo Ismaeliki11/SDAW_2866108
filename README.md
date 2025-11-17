@@ -115,33 +115,16 @@ Aquí tienes una chuleta con los comandos más importantes que usarás para esta
 
 En esta práctica, he podido aplicar los conceptos teóricos de... El uso de Git me ha permitido... La separación entre el servidor (server.js) y el cliente (index.html y script.js) me ha ayudado a entender mejor la arquitectura de una aplicación web moderna...
 
-## Información técnica añadida desde rama 3
+## Información técnica añadida desde rama 1
+- git init: inicializa el repositorio local.
+- git add: añade archivos al área de staging.
+- git commit: guarda los cambios en el historial.
+- git branch: lista y crea ramas.
+- git merge: fusiona una rama con otra.
+- git push: envía los commits al repositorio remoto.
+## Información técnica añadida desde rama 2
+a3c91d2 Primer commit
+f1b22ab Añadido script.js
+c98aa13 Creada estructura base del proyecto
 
-Aquí voy a añadir una pequeña reflexión personal sobre todo lo que aprendí en la primera parte del proyecto.
-
-Al principio trabajar con Git, ramas y commits parecía un caos, pero cuando ves el flujo completo (crear rama, modificar, hacer el commit, subirlo y fusionarlo con pull request), todo empeza a tener un cierto sentido, este proceso me ha ayudado a manejar GitHub mejor y a entender por qué las ramas son fundamentales para trabajar sin liarla en main.
-
-### Historial completo del repositorio:
-
-* 54e74a6 (HEAD -> rama3_Ismael, gitlab/main, main) Corregido
-| *   7f59895 (origin/main, origin/HEAD) Merge pull request #1 from Ismaeliki11/rama1_Flores
-| |\
-| | *   5299909 (origin/rama1_Flores) Merge branch 'main' into rama1_Flores
-| | |\
-| | |/
-| |/|
-| * |   3d2c803 Merge pull request #2 from Ismaeliki11/rama2_Flores
-| |\ \
-| | * | ad8bbfd (origin/rama2_Flores, rama2_Flores) Añadido log en una sola linea en rama 2
-| |/ /
-|/| |
-| | * 24c74f6 (rama1_Flores) Añadido log en una línea en rama 2
-| |/
-|/|
-* | 795c61e Commit base
-* | 2a1b19b Añadida información técnica en la rama 1
-* | e9a219e Actualizado el README
-* | 853c6c7 nuevo botón
-|/
-* f03ddfe Primer commit del proyecto SDAW_2866108
 
