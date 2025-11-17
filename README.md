@@ -115,16 +115,43 @@ Aquí tienes una chuleta con los comandos más importantes que usarás para esta
 
 En esta práctica, he podido aplicar los conceptos teóricos de... El uso de Git me ha permitido... La separación entre el servidor (server.js) y el cliente (index.html y script.js) me ha ayudado a entender mejor la arquitectura de una aplicación web moderna...
 
-## Información técnica añadida desde rama 1
-- git init: inicializa el repositorio local.
-- git add: añade archivos al área de staging.
-- git commit: guarda los cambios en el historial.
-- git branch: lista y crea ramas.
-- git merge: fusiona una rama con otra.
-- git push: envía los commits al repositorio remoto.
-## Información técnica añadida desde rama 2
-a3c91d2 Primer commit
-f1b22ab Añadido script.js
-c98aa13 Creada estructura base del proyecto
+## Apartado final
 
+### ¿Qué significa tener múltiples remotos?
 
+Tener múltiples remotos en un mismo repositorio local hace que el proyecto puede sincronizarse simultáneamente con diferentes servidores externos.En mi repositorio está conectado tanto a GitHub como a GitLab, es decir que puedo publicar los mismos commits en las dos plataformas sin tener de hacer el doble del trabajo ni mantener dos carpetas distintas.
+
+### Ventajas o posibles inconvenientes
+
+- Permite tener el proyecto en dos plataformas a la vez.
+- Es una buena forma de comparar herramientas como GitHub y GitLab.
+- Aumenta la seguridad del repositorio (si un servicio falla, el otro sigue funcionando).
+- Facilita colaborar con personas que prefieren un servicio u otro.
+- No hace falta duplicar carpetas ni proyectos ya que todo se controla desde el mismo directorio local.
+- Tienes que acordarte de subir los cambios a los dos remotos manualmente.
+- Si se trabaja con varias ramas a la vez, puede ser un poco bastante lioso el tener todo sincronizado.
+- Las plataformas tienen diferencias en la interfaz y hay que acostumbrarsea los dos.
+- Un error puede extenderse en los dos si no se tiene cuidado
+
+### Comandos se han utilizado o consultado:
+A lo largo de la práctica he recurrido a distintos comandos de Git, entre ellos:
+
+- `git remote add gitlab <URL>` — añade gitlab al proyecto.
+
+- `git remote -v` — enseña los remotos que se han configurados y te deja comprobar que los dos están activos.
+
+- `git checkout -b rama3_Ismael` — crea la nueva rama de trabajo a partir del estado actual
+
+- `git checkout main` — Vuelves a la rama principal.
+
+- `git push origin rama3_Ismael` — envía la rama 3 al repositorio alojado en GitHub.
+
+- `git push gitlab rama3_Ismael` — publica la misma rama en GitLab, manteniendo ambos remotos sincronizados.
+
+- `git log --oneline --graph --all` — enseña el historial del repositorio 
+
+- `git merge` — integra los cambios de una rama dentro de otra.
+
+- `git pull` — actualiza la copia local incorporando los merges realizados en remoto.
+
+Esta actividad me ha servido para entender mejor cómo funcionan los remotos, cómo se gestionan las ramas y cómo se replican los flujos de trabajo en servicios distintos.
