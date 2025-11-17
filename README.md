@@ -109,8 +109,17 @@ Aquí tienes una chuleta con los comandos más importantes que usarás para esta
 - `git push origin main`  
   Sube tus commits locales de la rama main al repositorio remoto en GitHub (llamado origin).
 
-## Notas y Conclusiones
+## Información técnica añadida desde rama 4
 
-(Esta sección está pensada para que la completes con tus propias reflexiones)
+El proceso consiste primero en crear un proyecto vacío en GitLab (sin README), luego copias la URL que te da la plataforma y la añades como segundo remoto usando el comando git remote add gitlab URL. Después me he asegurado de que los dos remotos estaban activos con git remote -v, y luego subí todo el proyecto a GitLab con git push gitlab main. Con esto, el repositorio SDAW_2866108 ya está sincronizado en las dos plataformas al mismo tiempo.
 
-En esta práctica, he podido aplicar los conceptos teóricos de... El uso de Git me ha permitido... La separación entre el servidor (server.js) y el cliente (index.html y script.js) me ha ayudado a entender mejor la arquitectura de una aplicación web moderna...
+### Procedimiento utilizado para conectar el repositorio local con GitLab
+
+1. Crear un nuevo proyecto vacío y público en GitLab llamado SDAW_2866108.
+2. Copiar la URL del proyecto.
+3. En el repositorio local ejecutar:
+    git remote add gitlab <URL_del_repo>
+4. Comprobar los remotos existentes con:
+   git remote -v
+5. Subir la rama principal a GitLab:
+   git push gitlab main
